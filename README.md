@@ -12,7 +12,6 @@ Sistema web completo para la gestión de:
 - Cheques (registro, estado, movimientos)
 
 Incluye interfaz web (Vue.js), backend REST (Spring Boot), base de datos MySQL y contenedores Docker.
-
 ---
 
 ## 🚀 Tecnologías utilizadas
@@ -68,7 +67,7 @@ CuentaServiceTest
 ChequeServiceTest
 
 
-🗂�?Script de base de datos
+🗂�?Script de base de datos
 Se encuentra en la carpeta llamada script.sql o se puede encontrar en
 \Documentos\sistema-cuentas\backend\cuentas\src\main\resources en esta ruta se genera automaticamente
 
@@ -79,7 +78,7 @@ se encuentra en documento word en la ruta
 Documentos\Diagrama_Entidad_Relacion
 
 
-👨‍�?Autor
+👨‍�?Autor
 Emmory Carias Gonzalez
 Candidato al puesto de Analista Programador
 Crédito Hipotecario Nacional de Guatemala
