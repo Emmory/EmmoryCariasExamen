@@ -2,6 +2,15 @@
 
 Este proyecto es parte del Examen Práctico para el puesto de **Analista Programador** en el Crédito Hipotecario Nacional de Guatemala.
 
+## 🚀 Como Ejecutar el proyecto
+1. Descargar o clonar el proyecto
+2. Dirigirse a la carpeta de docker
+3. Abrir un cmd y ejecutar docker compose up --build  donde se ejecutaran las 3 imagenes la de phpmyadmin, mysql, y el frontend
+4. Despues que se levantaron los contenedores ejecutar ruta del frontend http://localhost:5173
+5. http://localhost:8081/api/cuentas
+6. http://localhost:8081/api/clientes
+7. http://localhost:8081/api/chequeras
+8. http://localhost:8081/api/cheques
 ## 📌 Descripción
 
 Sistema web completo para la gestión de:
