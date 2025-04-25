@@ -1,0 +1,61 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: banco_cuentas
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - redlocal
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    depends_on:
+      - mysql
+    networks:
+      - redlocal
+
+  backend:
+    build:
+      context: ../backend/cuentas
+    container_name: springboot_app
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mysql
+    networks:
+      - redlocal
+
+  frontend:
+    build:
+      context: ../frontend/frontend-cuentas
+    container_name: frontend-container
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    networks:
+      - redlocal
+
+networks:
+  redlocal:
+    driver: bridge
+
+    
+    
+    
+
+
+

@@ -1,0 +1,14 @@
+create table cheque (chequera_id integer not null, id integer not null auto_increment, estado varchar(255), motivo_estado varchar(255), numero_cheque varchar(255), primary key (id)) engine=InnoDB;
+create table chequera (cantidad_cheques integer, cuenta_id integer not null, id integer not null auto_increment, numero_final integer, numero_inicial integer, estado varchar(255), motivo_estado varchar(255), primary key (id)) engine=InnoDB;
+create table cliente (fecha_nacimiento date, id integer not null auto_increment, apellido varchar(255), correo varchar(255), direccion varchar(255), identificacion varchar(255), nombre varchar(255), telefono varchar(255), primary key (id)) engine=InnoDB;
+create table cuenta (cliente_id integer not null, id integer not null auto_increment, monto_apertura decimal(38,2) not null, estado varchar(255), motivo_estado varchar(255), tipo varchar(255), primary key (id)) engine=InnoDB;
+alter table cheque add constraint FK5s8u2xwrpmv89nb4h2iws9lwr foreign key (chequera_id) references chequera (id);
+alter table chequera add constraint FKp2y6bc2y2lsbwxi3xxe6qtq28 foreign key (cuenta_id) references cuenta (id);
+alter table cuenta add constraint FK4p224uogyy5hmxvn8fwa2jlug foreign key (cliente_id) references cliente (id);
+create table cheque (chequera_id integer not null, id integer not null auto_increment, estado varchar(255), motivo_estado varchar(255), numero_cheque varchar(255), primary key (id)) engine=InnoDB;
+create table chequera (cantidad_cheques integer, cuenta_id integer not null, id integer not null auto_increment, numero_final integer, numero_inicial integer, estado varchar(255), motivo_estado varchar(255), primary key (id)) engine=InnoDB;
+create table cliente (fecha_nacimiento date, id integer not null auto_increment, apellido varchar(255), correo varchar(255), direccion varchar(255), identificacion varchar(255), nombre varchar(255), telefono varchar(255), primary key (id)) engine=InnoDB;
+create table cuenta (cliente_id integer not null, id integer not null auto_increment, monto_apertura decimal(38,2) not null, estado varchar(255), motivo_estado varchar(255), tipo varchar(255), primary key (id)) engine=InnoDB;
+alter table cheque add constraint FK5s8u2xwrpmv89nb4h2iws9lwr foreign key (chequera_id) references chequera (id);
+alter table chequera add constraint FKp2y6bc2y2lsbwxi3xxe6qtq28 foreign key (cuenta_id) references cuenta (id);
+alter table cuenta add constraint FK4p224uogyy5hmxvn8fwa2jlug foreign key (cliente_id) references cliente (id);
