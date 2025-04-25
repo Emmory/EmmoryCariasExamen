@@ -68,7 +68,7 @@ CuentaServiceTest
 ChequeServiceTest
 
 
-🗂️ Script de base de datos
+🗂�?Script de base de datos
 Se encuentra en la carpeta llamada script.sql o se puede encontrar en
 \Documentos\sistema-cuentas\backend\cuentas\src\main\resources en esta ruta se genera automaticamente
 
@@ -79,7 +79,7 @@ se encuentra en documento word en la ruta
 Documentos\Diagrama_Entidad_Relacion
 
 
-👨‍💻 Autor
+👨‍�?Autor
 Emmory Carias Gonzalez
 Candidato al puesto de Analista Programador
 Crédito Hipotecario Nacional de Guatemala
@@ -90,3 +90,4 @@ Correo de entrega:cariasemory@gmail.com
 
 
 Repositorio Github
+https://github.com/Emmory/EmmoryCariasExamen
